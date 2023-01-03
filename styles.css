@@ -1,0 +1,207 @@
+/* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Titillium Web", Times, serif;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* Variables */
+:root {
+  --spacing-xl: 4rem;
+  --spacing-lg: 3rem;
+  --spacing-md: 2rem;
+  --spacing-small: 1rem;
+  --spacing-xsmall: 0.5rem;
+  --font-size-xl: 6rem;
+  --font-size-lg: 4rem;
+  --font-size-md: 2rem;
+  --font-size-small: 1.5rem;
+  --font-size-xsmall: 1rem;
+  --base-color-1: #030224;
+  --base-color-2: #25c99e;
+  --base-color-3: #ffffff;
+  --border-radius: 22px;
+}
+
+/* App CSS */
+.landing-page {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: var(--base-color-3);
+  background: rgb(37, 201, 158);
+  background: linear-gradient(
+    180deg,
+    rgba(37, 201, 158, 1) 0%,
+    rgba(3, 2, 36, 1) 35%,
+    rgba(3, 2, 36, 1) 100%
+  );
+}
+
+section {
+  display: block;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-md);
+}
+
+section h2 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Header */
+.landing-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.landing-header nav {
+  display: flex;
+  justify-content: end;
+}
+
+.landing-header nav li {
+  list-style: none;
+  padding: var(--spacing-small);
+}
+.landing-header nav li:hover {
+  background-color: var(--base-color-1);
+  border-radius: 22px;
+}
+
+.landing-header nav a {
+  text-decoration: none;
+  padding: var(--spacing-small);
+  color: var(--base-color-3);
+}
+
+/* landing logo */
+.landing-logo {
+  display: block;
+}
+.landing-logo h1 {
+  font-size: var(--font-size-xl);
+}
+.landing-logo span {
+  color: var(--base-color-2);
+}
+.landing-logo--cta {
+  font-size: var(--font-size-small);
+  color: var(--base-color-3);
+  display: flex;
+  flex-direction: column;
+}
+.landing-logo--cta-links {
+  display: flex;
+  font-size: var(--font-size-xsmall);
+}
+.landing-logo--cta p {
+  margin: var(--spacing-md) 0;
+}
+.landing-logo--cta a {
+  text-decoration: none;
+  color: var(--base-color-3);
+  padding: var(--spacing-small);
+  background: var(--base-color-2);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.landing-logo--cta a:hover {
+  color: var(--base-color-1);
+  background: var(--base-color-3);
+}
+.landing-logo--cta a:first-child {
+  margin-right: var(--spacing-md);
+}
+
+/* landing steps */
+
+.landing-steps {
+  text-align: center;
+}
+.landing-steps-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70vw;
+}
+.landing-steps--visual {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+.landing-steps--visual:last-child {
+  margin-bottom: 0;
+}
+
+.landing-steps--visual .visual-info--more-info {
+  margin: 0;
+}
+.landing-steps--visual .visual-number {
+  font-size: var(--font-size-lg);
+  color: var(--base-color-2);
+}
+.landing-steps--visual .visual-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--spacing-small);
+  text-align: left;
+}
+.landing-steps--visual .visual-info--heading {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-xsmall);
+}
+
+/* Landing More Info */
+
+.landing-more-info {
+  text-align: center;
+}
+
+/* Landing visit app */
+.landing-visit-app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-visit-app img {
+  width: 60vw;
+}
+
+.landing-visit-app p {
+  font-size: var(--font-size-small);
+}
+.landing-visit-app .landing-visit-app--button {
+  text-decoration: none;
+  padding: var(--spacing-small);
+  color: var(--base-color-3);
+  background-color: var(--base-color-2);
+  border-radius: var(--border-radius);
+}
+.landing-visit-app .landing-visit-app--button:hover {
+  color: var(--base-color-1);
+  background: var(--base-color-3);
+}
