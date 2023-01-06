@@ -4,7 +4,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
 html,
 body {
   margin: 0;
@@ -23,6 +23,7 @@ h4 {
 
 /* Variables */
 :root {
+  --spacing-xxl: 6rem;
   --spacing-xl: 4rem;
   --spacing-lg: 3rem;
   --spacing-md: 2rem;
@@ -36,22 +37,22 @@ h4 {
   --base-color-1: #030224;
   --base-color-2: #25c99e;
   --base-color-3: #ffffff;
-  --border-radius: 22px;
+  --border-radius: 30px;
 }
 
 /* App CSS */
 .landing-page {
-  width: 100%;
   height: 100%;
   display: block;
   color: var(--base-color-3);
-  background: rgb(37, 201, 158);
+  background: var(--base-color-1);
   background: linear-gradient(
-    180deg,
+    215deg,
     rgba(37, 201, 158, 1) 0%,
     rgba(3, 2, 36, 1) 35%,
-    rgba(3, 2, 36, 1) 100%
+    rgba(3, 2, 36, 1) 5%
   );
+  padding: var(--spacing-md) var(--spacing-xl);
 }
 
 section {
@@ -77,11 +78,11 @@ section h2 {
 
 .landing-header nav li {
   list-style: none;
-  padding: var(--spacing-small);
+  padding: var(--spacing-xsmall) var(--spacing-small);
 }
 .landing-header nav li:hover {
   background-color: var(--base-color-1);
-  border-radius: 22px;
+  border-radius: var(--border-radius);
 }
 
 .landing-header nav a {
@@ -93,9 +94,12 @@ section h2 {
 /* landing logo */
 .landing-logo {
   display: block;
+  margin: 0 auto var(--spacing-xl);
 }
 .landing-logo h1 {
   font-size: var(--font-size-xl);
+  font-weight: 700;
+  width: 70%;
 }
 .landing-logo span {
   color: var(--base-color-2);
@@ -116,7 +120,7 @@ section h2 {
 .landing-logo--cta a {
   text-decoration: none;
   color: var(--base-color-3);
-  padding: var(--spacing-small);
+  padding: var(--spacing-xsmall) var(--spacing-small);
   background: var(--base-color-2);
   border-radius: var(--border-radius);
   font-weight: bold;
@@ -137,17 +141,24 @@ section h2 {
 
 .landing-steps {
   text-align: center;
+  width: 80%;
+  margin: var(--spacing-xxl) auto;
 }
+
+.landing-steps h2 {
+  font-size: var(--font-size-lg);
+}
+
 .landing-steps-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 0 auto;
-  width: 70vw;
 }
 .landing-steps--visual {
   display: flex;
   align-items: center;
   margin-bottom: var(--spacing-md);
+  width: 33%;
 }
 .landing-steps--visual:last-child {
   margin-bottom: 0;
@@ -157,13 +168,14 @@ section h2 {
   margin: 0;
 }
 .landing-steps--visual .visual-number {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
+  font-weight: 900;
   color: var(--base-color-2);
 }
 .landing-steps--visual .visual-info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: flex-start;
   padding: 0 var(--spacing-small);
   text-align: left;
 }
@@ -176,6 +188,17 @@ section h2 {
 
 .landing-more-info {
   text-align: center;
+  margin: var(--spacing-xxl) auto;
+  width: 80%;
+}
+
+.landing-more-info h2 {
+  font-size: var(--font-size-lg);
+  color: var(--base-color-2);
+}
+
+.landing-more-info p {
+  font-size: 1.3rem;
 }
 
 /* Landing visit app */
@@ -185,6 +208,10 @@ section h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.landing-visit-app h2 {
+  font-size: var(--font-size-md);
 }
 
 .landing-visit-app img {
