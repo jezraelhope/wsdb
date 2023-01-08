@@ -140,9 +140,13 @@ section h2 {
 /* landing steps */
 
 .landing-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   width: 80%;
-  margin: var(--spacing-xxl) auto;
+  height: 100vh;
+  margin: auto;
 }
 
 .landing-steps h2 {
@@ -152,7 +156,7 @@ section h2 {
 .landing-steps-container {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  margin: var(--spacing-xl) auto 0;
 }
 .landing-steps--visual {
   display: flex;
@@ -188,7 +192,7 @@ section h2 {
 
 .landing-more-info {
   text-align: center;
-  margin: var(--spacing-xxl) auto;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -197,17 +201,35 @@ section h2 {
   color: var(--base-color-2);
 }
 
+.landing-more-info-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+
 .landing-more-info p {
-  font-size: 1.3rem;
+  position: absolute;
+  font-size: 1.5rem;
+  line-height: 2;
+  z-index: 1;
+}
+
+.pinwheel {
+  filter: invert(78%) sepia(48%) saturate(3827%) hue-rotate(112deg)
+    brightness(110%) contrast(71%) opacity(35%);
+  height: 400px;
+  margin: 0 auto;
 }
 
 /* Landing visit app */
 .landing-visit-app {
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
+  margin: var(--spacing-xxl) auto;
 }
 
 .landing-visit-app h2 {
@@ -235,12 +257,6 @@ section h2 {
 
 /* footer */
 
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-}
-
-.footer-footer {
-  margin: 0 auto;
+footer {
+  text-align: center;
 }
