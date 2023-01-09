@@ -29,10 +29,10 @@ h4 {
   --spacing-md: 2rem;
   --spacing-small: 1rem;
   --spacing-xsmall: 0.5rem;
-  --font-size-xl: 6rem;
-  --font-size-lg: 4rem;
-  --font-size-md: 2rem;
-  --font-size-small: 1.5rem;
+  --font-size-xl: 8rem;
+  --font-size-lg: 5rem;
+  --font-size-md: 4rem;
+  --font-size-small: 1.3rem;
   --font-size-xsmall: 1rem;
   --base-color-1: #030224;
   --base-color-2: #25c99e;
@@ -112,7 +112,7 @@ section h2 {
 }
 .landing-logo--cta-links {
   display: flex;
-  font-size: var(--font-size-xsmall);
+  font-size: var(--font-size-small);
 }
 .landing-logo--cta p {
   margin: var(--spacing-md) 0;
@@ -120,7 +120,7 @@ section h2 {
 .landing-logo--cta a {
   text-decoration: none;
   color: var(--base-color-3);
-  padding: var(--spacing-xsmall) var(--spacing-small);
+  padding: var(--spacing-small) var(--spacing-md);
   background: var(--base-color-2);
   border-radius: var(--border-radius);
   font-weight: bold;
@@ -170,6 +170,7 @@ section h2 {
 
 .landing-steps--visual .visual-info--more-info {
   margin: 0;
+  font-size: var(--font-size-small);
 }
 .landing-steps--visual .visual-number {
   font-size: var(--font-size-xl);
