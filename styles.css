@@ -43,7 +43,7 @@ h4 {
 /* App CSS */
 .landing-page {
   height: 100%;
-  display: block;
+  width: 100%;
   color: var(--base-color-3);
   background: var(--base-color-1);
   background: linear-gradient(
@@ -52,33 +52,34 @@ h4 {
     rgba(3, 2, 36, 1) 35%,
     rgba(3, 2, 36, 1) 5%
   );
-  padding: var(--spacing-md) var(--spacing-xl);
+  background-repeat: no-repeat;
 }
 
 section {
   display: block;
-  margin-bottom: var(--spacing-xl);
-  padding: var(--spacing-md);
+  margin: var(--spacing-lg);
 }
 
 section h2 {
-  font-size: var(--font-size-md);
-  margin-bottom: var(--spacing-lg);
+  font-size: min(7vw, 5rem);
+  margin-bottom: var(--spacing-md);
 }
 
 /* Header */
 .landing-header {
-  margin-bottom: var(--spacing-xl);
+  display: flex;
+  justify-content: end;
 }
 
 .landing-header nav {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .landing-header nav li {
   list-style: none;
   padding: var(--spacing-xsmall) var(--spacing-small);
+  margin: var(--spacing-xsmall);
 }
 .landing-header nav li:hover {
   background-color: var(--base-color-1);
@@ -87,17 +88,16 @@ section h2 {
 
 .landing-header nav a {
   text-decoration: none;
-  padding: var(--spacing-small);
+  font-size: min(3vw, 1.5rem);
   color: var(--base-color-3);
 }
 
 /* landing logo */
 .landing-logo {
   display: block;
-  margin: 0 auto var(--spacing-xl);
 }
 .landing-logo h1 {
-  font-size: var(--font-size-xl);
+  font-size: min(10vw, 10rem);
   font-weight: 700;
   width: 70%;
 }
@@ -105,22 +105,24 @@ section h2 {
   color: var(--base-color-2);
 }
 .landing-logo--cta {
-  font-size: var(--font-size-small);
   color: var(--base-color-3);
   display: flex;
   flex-direction: column;
 }
-.landing-logo--cta-links {
-  display: flex;
-  font-size: var(--font-size-small);
-}
 .landing-logo--cta p {
   margin: var(--spacing-md) 0;
+  font-size: min(4vw, 1.3rem);
 }
+
+.landing-logo--cta-links {
+  display: flex;
+  font-size: min(3vw, 1rem);
+}
+
 .landing-logo--cta a {
   text-decoration: none;
   color: var(--base-color-3);
-  padding: var(--spacing-small) var(--spacing-md);
+  padding: var(--spacing-xsmall);
   background: var(--base-color-2);
   border-radius: var(--border-radius);
   font-weight: bold;
@@ -134,7 +136,7 @@ section h2 {
   background: var(--base-color-3);
 }
 .landing-logo--cta a:first-child {
-  margin-right: var(--spacing-md);
+  margin-right: var(--spacing-small);
 }
 
 /* landing steps */
@@ -145,35 +147,28 @@ section h2 {
   justify-content: center;
   text-align: center;
   width: 80%;
-  height: 100vh;
-  margin: auto;
-}
-
-.landing-steps h2 {
-  font-size: var(--font-size-lg);
 }
 
 .landing-steps-container {
   display: flex;
-  flex-direction: row;
-  margin: var(--spacing-xl) auto 0;
+  flex-direction: column;
 }
 .landing-steps--visual {
   display: flex;
   align-items: center;
-  margin-bottom: var(--spacing-md);
-  width: 33%;
 }
+
+.landing-steps--visual .visual-info--heading {
+  font-size: min(5vw, 9rem);
+  margin-bottom: var(--spacing-xsmall);
+}
+
 .landing-steps--visual:last-child {
   margin-bottom: 0;
 }
 
-.landing-steps--visual .visual-info--more-info {
-  margin: 0;
-  font-size: var(--font-size-small);
-}
 .landing-steps--visual .visual-number {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-weight: 900;
   color: var(--base-color-2);
 }
@@ -184,9 +179,10 @@ section h2 {
   padding: 0 var(--spacing-small);
   text-align: left;
 }
-.landing-steps--visual .visual-info--heading {
-  font-size: var(--font-size-md);
-  margin-bottom: var(--spacing-xsmall);
+
+.landing-steps--visual .visual-info--more-info {
+  margin: 0;
+  font-size: min(3vw, 3rem);
 }
 
 /* Landing More Info */
@@ -198,7 +194,6 @@ section h2 {
 }
 
 .landing-more-info h2 {
-  font-size: var(--font-size-lg);
   color: var(--base-color-2);
 }
 
@@ -211,7 +206,7 @@ section h2 {
 
 .landing-more-info p {
   position: absolute;
-  font-size: 1.5rem;
+  font-size: min(3vw, 1.7rem);
   line-height: 2;
   z-index: 1;
 }
@@ -219,7 +214,7 @@ section h2 {
 .pinwheel {
   filter: invert(78%) sepia(48%) saturate(3827%) hue-rotate(112deg)
     brightness(110%) contrast(71%) opacity(35%);
-  height: 400px;
+  max-height: 300px;
   margin: 0 auto;
 }
 
@@ -230,11 +225,6 @@ section h2 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: var(--spacing-xxl) auto;
-}
-
-.landing-visit-app h2 {
-  font-size: var(--font-size-md);
 }
 
 .landing-visit-app .landing-visit-app--button {
@@ -244,6 +234,7 @@ section h2 {
   color: var(--base-color-3);
   background-color: var(--base-color-2);
   border-radius: var(--border-radius);
+  font-size: min(4vw, 1.3rem);
 }
 .landing-visit-app .landing-visit-app--button:hover {
   color: var(--base-color-1);
@@ -257,7 +248,6 @@ section h2 {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  height: 80vh;
 }
 
 /* Hide the images by default */
@@ -302,7 +292,7 @@ section h2 {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: var(--font-size-small);
+  font-size: min(3vw, 1.3rem);
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -357,4 +347,83 @@ section h2 {
 
 footer {
   text-align: center;
+}
+
+@media screen and (min-width: 1025px) {
+  /* section */
+  section {
+    margin: 0 auto var(--spacing-xxl);
+    padding: var(--spacing-xxl);
+  }
+
+  .section h2 {
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  /* Header */
+
+  .landing-header {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .landing-header nav li {
+    margin: var(--spacing-xsmall) var(--spacing-md);
+  }
+
+  /* landing logo */
+  .landing-logo--cta-links {
+    display: flex;
+    font-size: var(--font-size-small);
+  }
+  .landing-logo--cta p {
+    margin: var(--spacing-md) 0;
+  }
+  .landing-logo--cta a {
+    padding: var(--spacing-small) var(--spacing-md);
+  }
+
+  /* landing steps */
+
+  .landing-steps-container {
+    flex-direction: row;
+    margin: var(--spacing-xl) auto 0;
+  }
+  .landing-steps--visual {
+    margin-bottom: var(--spacing-md);
+    width: 33%;
+  }
+
+  .landing-steps--visual .visual-number {
+    font-size: var(--font-size-xl);
+  }
+
+  .landing-steps--visual .visual-info--more-info {
+    font-size: var(--font-size-small);
+  }
+
+  /* Landing More Info */
+
+  .pinwheel {
+    filter: invert(78%) sepia(48%) saturate(3827%) hue-rotate(112deg)
+      brightness(110%) contrast(71%) opacity(35%);
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  /* Landing visit app */
+  .landing-visit-app {
+    margin: var(--spacing-xxl) auto;
+  }
+
+  /* slideshow */
+
+  /* Slideshow container */
+  .slideshow-container {
+    height: 80vh;
+  }
+  /* Caption text */
+  .text {
+    font-size: var(--font-size-small);
+  }
 }
