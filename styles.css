@@ -154,6 +154,8 @@ section h2 {
 .landing-steps-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .landing-steps--visual {
   display: flex;
@@ -163,10 +165,6 @@ section h2 {
 .landing-steps--visual .visual-info--heading {
   font-size: min(5vw, 9rem);
   margin-bottom: var(--spacing-xsmall);
-}
-
-.landing-steps--visual:last-child {
-  margin-bottom: 0;
 }
 
 .landing-steps--visual .visual-number {
@@ -208,7 +206,7 @@ section h2 {
 
 .landing-more-info p {
   position: absolute;
-  font-size: min(4vw, 1.7rem);
+  font-size: min(3vw, 1.7rem);
   line-height: 2;
   z-index: 1;
 }
@@ -356,7 +354,7 @@ footer {
   /* section */
   section {
     margin: 0 auto var(--spacing-xxl);
-    padding: var(--spacing-xxl);
+    padding: var(--spacing-xxl) var(--spacing-small);
   }
 
   .section h2 {
@@ -370,6 +368,10 @@ footer {
   }
 
   /* landing logo */
+
+  .landing-logo {
+    margin-top: 0;
+  }
   .landing-logo--cta-links {
     display: flex;
     font-size: var(--font-size-small);
