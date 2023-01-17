@@ -57,7 +57,7 @@ h4 {
 
 section {
   display: block;
-  margin: var(--spacing-lg);
+  margin: var(--spacing-lg) auto;
 }
 
 section h2 {
@@ -95,6 +95,7 @@ section h2 {
 /* landing logo */
 .landing-logo {
   display: block;
+  margin: var(--spacing-md);
 }
 .landing-logo h1 {
   font-size: min(10vw, 10rem);
@@ -147,6 +148,7 @@ section h2 {
   justify-content: center;
   text-align: center;
   width: 80%;
+  padding-top: var(--spacing-md);
 }
 
 .landing-steps-container {
@@ -206,7 +208,7 @@ section h2 {
 
 .landing-more-info p {
   position: absolute;
-  font-size: min(3vw, 1.7rem);
+  font-size: min(4vw, 1.7rem);
   line-height: 2;
   z-index: 1;
 }
@@ -225,16 +227,17 @@ section h2 {
   justify-content: center;
   text-align: center;
   align-items: center;
+  padding: var(--spacing-md);
 }
 
 .landing-visit-app .landing-visit-app--button {
   text-decoration: none;
-  padding: var(--spacing-small);
+  padding: var(--spacing-xsmall);
   margin-top: var(--spacing-md);
   color: var(--base-color-3);
   background-color: var(--base-color-2);
   border-radius: var(--border-radius);
-  font-size: min(4vw, 1.3rem);
+  font-size: min(3vw, 1.3rem);
 }
 .landing-visit-app .landing-visit-app--button:hover {
   color: var(--base-color-1);
@@ -247,7 +250,6 @@ section h2 {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
 }
 
 /* Hide the images by default */
@@ -314,8 +316,8 @@ section h2 {
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -347,6 +349,7 @@ section h2 {
 
 footer {
   text-align: center;
+  font-size: min(2vw, 15px);
 }
 
 @media screen and (min-width: 1025px) {
@@ -380,6 +383,9 @@ footer {
   }
 
   /* landing steps */
+  .landing-steps {
+    margin-top: 0;
+  }
 
   .landing-steps-container {
     flex-direction: row;
