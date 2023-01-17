@@ -362,11 +362,6 @@ footer {
   }
 
   /* Header */
-
-  .landing-header {
-    margin-bottom: var(--spacing-xl);
-  }
-
   .landing-header nav li {
     margin: var(--spacing-xsmall) var(--spacing-md);
   }
@@ -377,7 +372,8 @@ footer {
     font-size: var(--font-size-small);
   }
   .landing-logo--cta p {
-    margin: var(--spacing-md) 0;
+    margin-bottom: var(--spacing-xl);
+    padding-left: var(--spacing-xsmall);
   }
   .landing-logo--cta a {
     padding: var(--spacing-small) var(--spacing-md);
