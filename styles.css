@@ -230,12 +230,12 @@ section h2 {
 
 .landing-visit-app .landing-visit-app--button {
   text-decoration: none;
-  padding: var(--spacing-xsmall);
+  padding: var(--spacing-xsmall) var(--spacing-small);
   margin-top: var(--spacing-md);
   color: var(--base-color-3);
   background-color: var(--base-color-2);
   border-radius: var(--border-radius);
-  font-size: min(3vw, 1.3rem);
+  font-size: min(2.6vw, 1.3rem);
 }
 .landing-visit-app .landing-visit-app--button:hover {
   color: var(--base-color-1);
@@ -420,6 +420,10 @@ footer {
     margin: var(--spacing-xxl) auto;
   }
 
+  .landing-visit-app .landing-visit-app--button {
+    padding: var(--spacing-small) var(--spacing-md);
+  }
+
   /* slideshow */
 
   /* Slideshow container */
@@ -428,6 +432,6 @@ footer {
   }
   /* Caption text */
   .text {
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-small) var(--font-size-md);
   }
 }
